@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>meaning</title>
+	<style>
+		<!--
+			*{padding: 0;
+			 margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */ 
+		
+		.wrap{padding-top: 0px;
+			  width: 1500px;
+			  margin: 0 auto;
+			  z-index: 100;
+			  position: absolute}    /* 对导航的内容设置一个主体为1500px的宽并使其居中 */    
+		
+		.clear{clear: both;}  /* 清除浮动 */ 
+		
+		a{text-decoration: none;}   /* 去掉默认a标签的下划线 */    	
+		
+		ul,li{list-style: none;} 
+		
+		nav .level>li{float:left;
+					width:15%;
+					text-align:center;
+					background:#000000;
+					padding: 10px 0;
+					font-family: condiment;
+					font-size: 24px;
+					transition: .4s;
+					z-index: 100} 
+		
+		nav .level>li a{color:darkgray;}    
+		
+		nav .level>li:hover{background:#717171;}   /* 设置鼠标滑过后的样式 */   
+		
+		nav .two{display: none;margin-top: 8px;}  /* 先使二级菜单的内容隐藏 */ 
+		
+		nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */    
+			
+		nav .two li{padding: 4px 0;
+					transition: .4s;
+					cursor: pointer;}   
+		
+		nav .two li:hover{background:linear-gradient(#fff,#aaa);}
+		
+		.container{background-color: black;
+		           height:52px;
+		           width: 1500px;
+		           text-align: left;}
+		
+		.firstBox{left: 100px;
+			      top:100px;
+			      z-index: 20;
+			      width: 300px;
+			      height: 200px;
+				  border: 5px solid #121D0F;
+				  border-style:double;position: absolute;}
+		
+		.secondBox{left:600px;
+					top:100px;
+					z-index: 20;
+					width: 300px;
+					height: 200px;
+					border: 5px solid #121D0F;
+					border-style:double;
+					position: absolute;
+					margin-left: auto;
+					margin-right: auto}/*第二个box*/
+		
+		.thirdBox{left:1100px;
+					top:100px;
+					z-index: 120;
+					width: 300px;
+					height: 200px;
+					border: 5px solid #121D0F;
+					border-style:double;
+					position: absolute;
+					float: right}/*第三个box*/
+		
+		.fourthBox{top:400px;
+					left: 100px;
+					z-index: 120;
+					width: 139px;
+					height: 200px;
+					border: 5px solid #121D0F;
+					border-style:outset;position: absolute;}/*第四个box*/
+		
+		.fifthBox{top:400px;
+					left: 400px;
+					z-index: 120;
+					width:900px;
+					height: 200px;
+					border: 5px solid #121D0F;
+					border-style:outset;position: absolute;
+					background-color: aliceblue}/*第五个box*/
+		
+		.daoHang{font-size: 30px;
+					color:aliceblue;
+					letter-spacing: normal;
+					margin-left: 30px;
+					text-indent: 2em;
+					margin: 30px;}/*导航字体*/
+		
+		.articleText{font-family:"仿宋";
+					font-size: 23px;
+					color:#000000;
+					letter-spacing: normal;
+					text-align: left;
+					text-indent:2em}/*正文字体*/
+		
+		.firseLetter{font-family: "仿宋";
+					font-size:40px;
+					text-align: left;
+					text-indent: 2em;
+					text-align: left}/*首字大写*/
+		
+		.backimage{border: 1px solid;
+					width:1500px;
+					height: 1080px;
+					background-repeat: no-repeat;
+					background-image: url(img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0605.jpg);
+					margin: auto;
+					background-position: center;
+					background-attachment: fixed;
+					background-size: cover;}/*整面背景图*/
+		
+		/*跳转方框*/
+		.sixthbox{top:700px;
+				  left: 100px;
+				  border: 5px solid #FEF8F8;
+				  border-style:outset;position: absolute;}
+		
+		/*跳转方框*/
+		.lastBox{top:700px;
+				left: 900px;
+				border: 5px solid #FEF8F8;
+				border-style:outset;position: absolute;}
+		
+		.lastText{color: aliceblue;
+				  font-size:20px;
+				  margin: 20px;
+				  margin-left: 10px}
+		
+		.bottomContainer{width:1050px; /*底部div框设置*/
+			             position:absolute;
+			             text-align: center;
+			             left:153px;
+			             top:1040px;}
+		-->
+	</style>
+</head>
+
+<body>
+	<!--设置背景-->
+	<div class="backimage">
+		<!--导航栏-->
+		<div class="container">
+		<nav>        
+		<div class="wrap">           
+			<ul class="level">
+				<li>
+     				<a href="../index.html" target="_parent">home</a>
+				</li>
+				<li>                    
+					<a href="201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0602.html" target="_self">meaning</a>                    
+						<ul class="two">
+							<li><a href="../L/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0602.html">L</a></li>                       
+							<li><a href="../G/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0603.html">G</a></li>                       
+							<li><a href="../B/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0604.html">B</a></li>
+							<li><a href="../T/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0605.html">T</a></li>
+						</ul>               
+				</li>               
+				<li>                   
+					<a href="201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0606.html" target="_blank">stories</a>                   
+					<ul class="two">                       
+						<li>
+							<a href="../art stories/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0606.html" target="_self">Art stories</a>
+						</li>                       
+						<li>
+							<a href="../reality stories/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0607.html" target="_self">Reality stories </a>
+						</li>                                       
+					</ul>               
+				</li>               
+				<li>                   
+					<a href="../message board/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0608.html" target="_blank">message board</a>                                  
+				</li>
+			</ul>        
+		</div>    
+	</nav>
+		</div>
+		<!--图片布局第一张-->
+		<div class="firstBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0606.jpg" alt="女同性恋运动图片1" width="300" height="200">
+		</div>
+		<!--第二张图片-->
+		<div class="secondBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0607.jpg" alt="女同性恋运动2" width="300" height="200">
+		</div>
+		<!--第三张图片-->
+		<div class="thirdBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0608.jpg" alt="女同性恋运动3" width="300" height="200">
+		</div>
+		<!--第四张图片-->
+		<div class="fourthBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0609.jpg" alt="女同性恋运动4" width="139" height="197">
+		</div>
+		<!--正文内容-->
+		<div class="fifthBox">
+			<p class="articleText"><b class="firseLetter">女同性恋者（Lesbians）</b>：女同性恋，又称女同、拉拉、百合、蕾丝边、Lesbian、Les、Girlslove，是指只对同性产生爱情和性欲的女性。尽管自古以来女同性恋曾被记载于多处文化中，但是直至今日才出现蕾、蕾丝边、拉拉等字词，用以形容女同性恋者。十九世纪晚期，性学家发表了他们对同性欲望与行为表现的研究，标明了女同性恋者在西方文化中是属于独立的群体。因此，意识到自身新医学身份的女性逐渐在欧洲与北美洲形成秘密次文化。</p>
+		</div>
+		<div class="bottomContainer">
+	<p>Copyright © 2020 版权所有 我爱网页网页爱我</p>
+		<p>若有问题，请联系我们：1076745387</p>
+	</div>
+	</div>
+</body>
+</html>

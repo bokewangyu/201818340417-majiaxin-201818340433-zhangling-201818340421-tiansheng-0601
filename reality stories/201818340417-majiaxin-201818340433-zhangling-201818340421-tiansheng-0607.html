@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>lgbt现实故事</title>
+	<style>
+		<!--
+			*{padding: 0;
+			 margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */ 
+		
+			.wrap{padding-top: 0px;
+				  width: 1500px;
+				  margin: 0 auto;
+				  z-index: 100;
+				  position: absolute}    /* 对导航的内容设置一个主体为1500px的宽并使其居中 */    
+		
+			.clear{clear: both;}  /* 清除浮动 */ 
+		
+			a{text-decoration: none;}   /* 去掉默认a标签的下划线 */    	
+		
+			ul,li{list-style: none;} 
+		
+			nav .level>li{float:left;
+						  width:15%;
+						  text-align:center;
+						  background:#000000;
+						  padding: 10px 0;
+						  font-family: condiment;
+						  font-size: 24px;
+						  transition: .4s;
+						  z-index: 100} 
+		
+			nav .level>li a{color:darkgray;}    
+
+			nav .level>li:hover{background:#4D4C4C;}   /* 设置鼠标滑过后的样式 */   
+
+			nav .two{display: none;margin-top: 8px;}  /* 先使二级菜单的内容隐藏 */ 
+
+			nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */    
+
+			nav .two li{padding: 4px 0;
+						transition: .4s;
+						cursor: pointer;}   
+		
+			nav .two li:hover{background:linear-gradient(#fff,#aaa);}
+		
+			.container{background-color: black;
+					   height:52px;
+					   width: 1500px;
+					   text-align: left;}/*设置导航框样式*/
+		
+			.backimage{border: 1px solid;
+					   width:1500px;
+					   height:1750px;
+					   background-repeat: no-repeat;
+					   background-image: url(img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0622.jpg);
+					   margin: auto;
+					   background-position: center;
+					   background-attachment:fixed;
+					   background-size: cover;}/*设置网页背景图*/
+
+		
+			main{height: 1500px;
+				 padding-top: 70px;}
+			
+			p{text-indent: 2em;
+			  font-family: "宋体";
+		      font-size: 16px;}
+			
+			.pic-one{top: 230px;
+					left:240px;
+					z-index: 120;
+					width: 360px;
+					height: 250px;
+					border: 5px solid #121D0F;border-style: outset;
+					position: absolute;}/*设置第一个图片框的样式*/
+
+			.content-one{position: absolute;
+						 line-height: 30px;
+						 left: 700px;
+						 top: 230px;
+						 z-index: 120;
+						 border: 5px solid #121D0F;
+						 border-style: outset; 
+						 height: 250px;
+						 width:600px;}/*设置第一个文字框的样式*/
+		
+			.pic-tow{top: 570px;
+					 left:240px;
+					 z-index: 120;
+					 width: 360px;
+					 height: 250px;
+					 border: 5px solid #121D0F;
+					 border-style: outset;
+					 position: absolute;}
+
+			.content-tow{position: absolute;
+						 line-height: 30px;
+						 left: 700px;
+						 top: 570px;
+						 z-index: 120;
+						 border: 5px solid #121D0F;border-style: outset; 
+						 height: 250px;
+						 width:600px;}
+		
+			.pic-three{top: 900px;
+				       left:240px;
+					   z-index: 120;
+					   width: 360px;
+					   height: 250px;
+					   border: 5px solid #121D0F;
+					   border-style: outset;
+					   position: absolute;}
+
+			.content-three{ position: absolute;
+							line-height: 30px;
+							left: 700px;
+							top: 900px;
+							z-index: 120;
+							border: 5px solid #121D0F;border-style: outset; 
+							height: 250px;
+							width:600px;}
+	
+			.pic-four{top: 1230px;
+					  left:240px;
+					  z-index: 120;
+					  width: 360px;
+					  height: 270px;
+					  border: 5px solid #121D0F;border-style: outset;
+					  position: absolute;}
+
+			.content-four{position: absolute;
+						  line-height: 30px;
+						  left: 700px;
+						  top: 1230px;
+						  z-index: 120;
+						  border: 5px solid #121D0F;border-style: outset; 
+						  height: 270px;
+						  width:600px;}
+
+			.subnav{padding-left: 70px;
+					width: 1300px;
+					text-align: left;}/*设置网页底部的链接框*/
+		
+			.subnav a{border:inset 5px #000000;
+					  border-color:#BEBEBE;
+					  padding-left: 10px;
+					  width:110px;
+					  margin-top: 0px;
+					  float: left;
+					  font-family: "宋体";
+					  font-size: 24px;
+					  list-style-type:none;
+					  display:block;
+					  text-decoration:none;
+					  color:#413E3E;}
+
+			.subnav a:link{color:#413E3E;;
+				           text-decoration:none;}
+		
+			.subnav a:active{color:aliceblue;
+					         text-decoration:underline;}
+		
+			.subnav a:hover{color: aliceblue;
+							text-decoration:none;}
+		
+			.line{margin-top: 10px;
+				  border-top:5px solid;
+				  border-color: black;
+				  border-bottom:0px;
+				  border-right: 0px;
+				  border-left:0px;
+				  width: 1500px;
+				  height: 5px; }/*设置分割线*/
+		
+			.link{padding-left: 0px;}/*设置导航栏下方的链接*/
+		
+			.link p{font-family: condiment;
+					font-size:20px;
+					color: black;}
+		
+			footer{width:1050px;                    
+			             position:absolute;
+			             text-align: center;
+			             left:153px;
+			             top:1700px;} /*页脚框设置*/
+		-->
+	</style>
+</head>
+
+<body>
+	<div class="backimage">
+		<div class="container">
+			<nav>        
+				<div class="wrap">           
+					<ul class="level"> 
+						<li>
+							<a href="../index.html" target="_parent">home</a>
+						</li>
+						<li>                    
+							<a href="201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0602.html" target="_blank">meaning</a>                 
+							<ul class="two">                       
+								<li>
+									<a href="../L/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0602.html">L</a>
+								</li>                       
+								<li>
+									<a href="../G/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0603.html">G</a>
+								</li>                       
+								<li>
+									<a href="../B/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0604.html">B</a>
+								</li>
+								<li>
+									<a href="../T/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0605.html">T</a>
+								</li>
+							</ul>               
+						</li>               
+						<li>                   
+							<a href="201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0606.html" target="_self">stories</a>             
+							<ul class="two">                       
+								<li>
+									<a href="../art stories/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0606.html" target="_self">Art stories</a>
+								</li>                       
+								<li>
+									<a href="../relity stories/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0607.html" target="_self">Reality stories </a>
+								</li>                                       
+							</ul>               
+						</li>               
+						<li>                   
+							<a href="../message board/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0608.html" target="_blank">message board</a>   
+						</li> 
+					</ul>
+				</div>    
+			</nav>	
+		</div>
+			<!--开始主要内容-->
+			<main>
+				<div class="link">
+					<p>当前位置：home &gt; stories &gt; Reality stories</p>
+				</div>
+				<hr class="line">
+				<div class="pic-one">
+					<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0628.jpg" alt="芭芭拉.吉丁斯" width="360" height="250">
+				</div>
+				<div class="content-one">
+					<h3>芭芭拉·吉丁斯</h3>
+					<br>
+					<p>
+						<b>
+						美国同志运动的先驱，在同运历史上功勋卓著。除了促使美国精神病学会不再将同性恋视为精神失常以外，她还组建了美国第一个女同性恋组织比利蒂斯女儿的纽约分部，并且主编它的会刊《阶梯》，她成功说服美国图书馆协会让性少数相关文献进入公立图书馆，令大众看到准确的描述，听到公正的声音。
+						</b>
+					</p>
+				</div>
+				<div class="pic-tow">
+					<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0629.jpg" alt="《阿黛尔的生活》" width="360" height="250">
+				</div>
+				<div class="content-tow">
+					<h3>张国荣</h3>
+					<br>
+					<p>
+						<b>
+						他的“伴侣”唐鹤德一直没有忘记，他在用自己的方式怀念他。每一年的4月1日，唐鹤德都会晒照怀念曾经的恋人，“过去多少快乐记忆，何妨与你一起去追”，今年的唐鹤德已经61岁，他仍然忘不了张国荣，还说：“你走了后，我便活在回忆中了”，唐鹤德至今仍和张国荣经纪人保持很好的联系。
+						</b>
+					</p>
+				</div>
+				<div class="pic-three">
+					<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0630.jpg" alt="卡罗尔" width="360" height="250">
+				</div>
+				<div class="content-three">
+					<h3>南康白起</h3>
+					<br>
+					<p>
+						<b>
+						生于辽宁，长于内蒙古，网络作家。在晋江文学城曾用笔名“白起”(后不知被谁缘何改为“康康”)，到天涯用笔名“南康”。　2006年1月1日，男友结婚，曾撰文《我等你到三十五岁》寄情，此时文风有所转暗，字里行间忧郁充斥其中。疑患抑郁症。2008年3月，在湘江投江自尽。
+						</b>
+					</p>
+				</div>
+				<div class="pic-four">
+					<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0631.jpg" alt="叶永志" width="360" height="270">
+				</div>
+				<div class="content-four">
+					<h3>叶永志</h3>
+					<p>
+						<b>
+						2000年4月20日上午，台湾屏东县高树乡高树国中学生叶永志被发现陈尸学校厕，校方说他是“不慎摔倒”，法医相验说无外伤与他杀嫌疑，但随着新闻逐渐扩散，才知道叶永志因为外型秀气、举止温柔，在学校常常受到欺凌，甚至有男同学在他上厕所时包围他，硬要把他的裤子脱下，“检查看看是不是女生？”有人威胁要打他（曾经打过他），导致他不敢上厕所，学校老师知道，也只是让他在下课前提早五分钟去厕所，或者上教职员厕所，无法提出有效的保护方案，经过六年缠讼，最后学校三位员工以业务过失致死判刑，无论究竟有没有人加害他，他的死因仍与“性别歧视与霸凌”脱不了关系。
+						</b>
+					</p>
+				</div>
+			</main>
+			<div class="subnav">
+				<a href="img201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0601" target="_blank">返回主页</a>
+			</div>
+			<footer>
+				<p>Copyright © 2020 版权所有 我爱网页网页爱我</p>
+				<p>若有问题，请联系我们：1076745387</p>
+			</footer>
+		</div>
+</body>
+</html>
+

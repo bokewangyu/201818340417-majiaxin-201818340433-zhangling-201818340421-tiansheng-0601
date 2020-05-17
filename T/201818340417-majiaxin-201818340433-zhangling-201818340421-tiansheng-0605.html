@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>meaning</title>
+	<style>
+		<!--
+		*{padding: 0;
+		 margin: 0;}  /* 先重置一下html，消除HTML标签默认的内外边距 */ 
+		
+		.wrap{padding-top: 0px;
+			width: 1500px;
+			 margin: 0 auto;
+			z-index: 100;
+			position:absolute;}    /* 对导航的内容设置一个主体为1500px的宽并使其居中 */    
+		.clear{clear: both;}  /* 清除浮动 */ 
+		a{text-decoration: none;}   /* 去掉默认a标签的下划线 */    	
+		ul,li{list-style: none;} 
+		nav .level>li{float:left;
+					width:15%;
+					text-align:center;
+					background:#000000;
+					padding: 10px 0;
+					font-family: condiment;
+					font-size: 24px;
+					transition: .4s;
+					z-index: 100} 
+		
+		nav .level>li a{color:darkgray;}    
+		
+		nav .level>li:hover{background:#717171;}   /* 设置鼠标滑过后的样式 */   
+		
+		nav .two{display: none;margin-top: 8px;}  /* 先使二级菜单的内容隐藏 */ 
+		
+		nav .level>li:hover .two{display: block;}   /* 鼠标滑过一级菜单后的显示二级菜单 */    
+			
+		nav .two li{padding: 4px 0;
+					transition: .4s;
+					cursor: pointer;}   
+		
+		nav .two li:hover{background:linear-gradient(#fff,#aaa);}
+		.container{background-color: black;
+		           height:52px;
+		           width: 1500px;
+		           text-align: left;}
+		.firstBox{left: 100px;
+			top:100px;
+			z-index: 20;
+			width: 300px;
+			height: 200px;
+			border: 5px solid #121D0F;
+			border-style:double;position: absolute;
+			}
+		.secondBox{left:600px;
+			top:100px;
+			z-index: 20;
+			width: 300px;
+			height: 200px;
+			border: 5px solid #121D0F;
+			border-style:double;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto}/*第二个box*/
+		.thirdBox{left:1100px;
+			top:100px;
+			z-index: 120;
+			width: 300px;
+			height: 200px;
+			border: 5px solid #121D0F;
+			border-style:double;
+			position: absolute;
+			float: right}/*第三个box*/
+		.fourthBox{top:400px;
+			left: 100px;
+			z-index: 120;
+			width: 139px;
+			height: 200px;
+			border: 5px solid #121D0F;
+			border-style:outset;position: absolute;}/*第四个box*/
+		.fifthBox{top:400px;
+			left: 400px;
+			z-index: 120;
+			width:900px;
+			height: 200px;
+			border: 5px solid #121D0F;
+			border-style:outset;position: absolute;
+			background-color: aliceblue}/*第五个box*/
+		.daoHang{font-size: 30px;
+		color:aliceblue;
+		letter-spacing: normal;
+		margin-left: 30px;
+		text-indent: 2em;
+		margin: 30px;
+		}/*导航字体*/
+		.articleText{font-family:"仿宋";
+		font-size: 23px;
+		color:#000000;
+		letter-spacing: normal;
+		text-align: left;
+		text-indent:2em}/*正文字体*/
+		.firseLetter{font-family: "仿宋";
+		font-size:40px;
+		text-align: left;
+		text-indent: 2em;
+		text-align: left}/*首字大写*/
+		.backimage{border: 1px solid;
+		width:1500px;
+		height:980px;
+		background-repeat: no-repeat;
+		background-image: url(img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0605.jpg);
+		margin: auto;
+		background-position:center;
+		background-attachment: fixed;
+		background-size: cover}
+		/*跳转方框*/
+		.sixthbox{margin-left: -310px;
+			float: left;
+			top:300px;
+			border: 5px solid #FEF8F8;
+			border-style:outset;position: absolute;}
+		/*跳转方框*/
+		.lastBox{top:300px;
+			left: 500px;
+			border: 5px solid #FEF8F8;
+			border-style:outset;position: absolute;}
+		.lastText{color: aliceblue;
+			font-size:20px;
+			margin: 20px;
+			margin-left: 10px}
+		.bottomContainer{width:1050px;                     /*底部div框设置*/
+			             position:absolute;
+			             text-align: center;
+			             margin-left:-150px;
+			             top:500px;}
+		-->
+	</style>
+</head>
+
+<body>
+	<div class="backimage">
+		<!--导航栏-->
+		<div class="container">
+		<nav>        
+			<div class="wrap">           
+				<ul class="level">
+					<li>
+     				<a href="../index.html" target="_parent">home</a>
+					</li>
+					<li>                    
+						<a href="">meaning</a>                    
+						<ul class="two">                       
+							<li><a href="../L/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0605.html">L</a></li>                       
+							<li><a href="../G/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0603.html">G</a></li>                       
+							<li><a href="../B/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0604.html">B</a></li>
+							<li><a href="../T/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0605.html">T</a></li>
+						</ul>               
+					</li>               
+					<li>                   
+						<a href="">stories</a>                   
+						<ul class="two">                       
+							<li><a href="../art stories/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0606.html">Art stories</a></li>                       
+							<li><a href="../reality stories/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0607.html">Reality stories</a></li>                                       
+						</ul>               
+					</li>               
+					<li>                   
+						<a href="../message board/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0608.html">message board</a>                               
+					</li>
+					<li>
+					<a href="../log in/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0601.html">log in</a>
+					</li>
+				</ul>        
+			</div>    
+		</nav>
+	</div>
+		<div class="firstBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0618.jpg" alt="跨性别者图片" width="300" height="200">
+		</div>
+		<div class="secondBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0619.jpg" alt="LGBT运动" width="300" height="200">
+		</div>
+		<div class="thirdBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0620.jpg" alt="LGBT运动3" width="300" height="200">
+		</div>
+		<div class="fourthBox">
+			<img src="img/201818340417-majiaxin-201818340433-zhangling-201818340421-tiansheng-0621.jpg" alt="女同性恋运动4" width="139" height="200">
+		</div>
+		<div class="fifthBox">
+			<p class="articleText"><b class="firseLetter">跨性别者（Transgender）:</b>尽管跨性别的定义依旧未被完全确定，不过已经有一种定义被广泛的接受：跨性别，指一个人在心理上无法认同自己与生俱来的性别，相信自己应该属于另一种性别。
+跨性别者不一定会进行医学性别重整治疗（medical gender reassignment therapy），而且他们可能也不会对这种步骤感兴趣。有些跨性别者不主张通过手术来改变，而有些跨性别者迫切希望通过手术改变自己的生理性别，也就是我们常说的变性人。</p>
+		<div class="bottomContainer">
+			<p>Copyright © 2020 版权所有 我爱网页网页爱我</p>
+			<p>若有问题，请联系我们：1076745387</p>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
